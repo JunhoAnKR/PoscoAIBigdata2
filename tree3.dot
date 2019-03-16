@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="HANDSET_ASAD170 <= 0.5\nsamples = 635\nvalue = [513, 122]\nclass = 0", fillcolor="#e58139c2"] ;
+1 [label="HANDSET_WC95 <= 0.5\nsamples = 555\nvalue = [433, 122]\nclass = 0", fillcolor="#e58139b7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AGE <= 25.5\nsamples = 480\nvalue = [358, 122]\nclass = 0", fillcolor="#e58139a8"] ;
+1 -> 2 ;
+3 [label="SERVICE_DURATION <= 39.28\nsamples = 164\nvalue = [97, 67]\nclass = 0", fillcolor="#e581394f"] ;
+2 -> 3 ;
+4 [label="TOTAL_CALLS_NO <= 258.5\nsamples = 100\nvalue = [50, 50]\nclass = 0", fillcolor="#e5813900"] ;
+3 -> 4 ;
+5 [label="samples = 50\nvalue = [29, 21]\nclass = 0", fillcolor="#e5813946"] ;
+4 -> 5 ;
+6 [label="samples = 50\nvalue = [21, 29]\nclass = 1", fillcolor="#399de546"] ;
+4 -> 6 ;
+7 [label="samples = 64\nvalue = [47, 17]\nclass = 0", fillcolor="#e58139a3"] ;
+3 -> 7 ;
+8 [label="HANDSET_S80 <= 0.5\nsamples = 316\nvalue = [261, 55]\nclass = 0", fillcolor="#e58139c9"] ;
+2 -> 8 ;
+9 [label="HANDSET_S50 <= 0.5\nsamples = 225\nvalue = [176, 49]\nclass = 0", fillcolor="#e58139b8"] ;
+8 -> 9 ;
+10 [label="HANDSET_BS110 <= 0.5\nsamples = 130\nvalue = [91, 39]\nclass = 0", fillcolor="#e5813992"] ;
+9 -> 10 ;
+11 [label="samples = 61\nvalue = [32, 29]\nclass = 0", fillcolor="#e5813918"] ;
+10 -> 11 ;
+12 [label="samples = 69\nvalue = [59, 10]\nclass = 0", fillcolor="#e58139d4"] ;
+10 -> 12 ;
+13 [label="samples = 95\nvalue = [85, 10]\nclass = 0", fillcolor="#e58139e1"] ;
+9 -> 13 ;
+14 [label="samples = 91\nvalue = [85, 6]\nclass = 0", fillcolor="#e58139ed"] ;
+8 -> 14 ;
+15 [label="samples = 75\nvalue = [75, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+1 -> 15 ;
+16 [label="samples = 80\nvalue = [80, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ROLLING_TEMP_T5 <= 0.921\nsamples = 497\nvalue = [343, 154]\nclass = 0", fillcolor="#e581398d"] ;
+1 [label="HSB_적용 <= 0.5\nsamples = 397\nvalue = [343, 54]\nclass = 0", fillcolor="#e58139d7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 20\nvalue = [0, 20]\nclass = 1", fillcolor="#399de5ff"] ;
+1 -> 2 ;
+3 [label="FUR_SZ_TEMP <= 1.475\nsamples = 377\nvalue = [343, 34]\nclass = 0", fillcolor="#e58139e6"] ;
+1 -> 3 ;
+4 [label="ROLLING_DESCALING <= 0.676\nsamples = 360\nvalue = [343, 17]\nclass = 0", fillcolor="#e58139f2"] ;
+3 -> 4 ;
+5 [label="ROLLING_DESCALING <= 0.066\nsamples = 190\nvalue = [173, 17]\nclass = 0", fillcolor="#e58139e6"] ;
+4 -> 5 ;
+6 [label="ROLLING_DESCALING <= -1.765\nsamples = 179\nvalue = [173, 6]\nclass = 0", fillcolor="#e58139f6"] ;
+5 -> 6 ;
+7 [label="samples = 3\nvalue = [0, 3]\nclass = 1", fillcolor="#399de5ff"] ;
+6 -> 7 ;
+8 [label="samples = 176\nvalue = [173, 3]\nclass = 0", fillcolor="#e58139fb"] ;
+6 -> 8 ;
+9 [label="samples = 11\nvalue = [0, 11]\nclass = 1", fillcolor="#399de5ff"] ;
+5 -> 9 ;
+10 [label="samples = 170\nvalue = [170, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+4 -> 10 ;
+11 [label="samples = 17\nvalue = [0, 17]\nclass = 1", fillcolor="#399de5ff"] ;
+3 -> 11 ;
+12 [label="samples = 100\nvalue = [0, 100]\nclass = 1", fillcolor="#399de5ff"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

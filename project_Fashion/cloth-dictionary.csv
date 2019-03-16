@@ -1,0 +1,12 @@
+CustomerID,고객 ID
+gender,고객의 성별
+age,고객의 대략적 나이
+job,"직업(학생, 임시직, 자영업, 직장인, 전문직"
+marital,고객의 결혼 상태
+province,고객의 주소(광역시도)
+city,고객의 주소(시구)
+size,신체크기
+orderID,구매 아이디
+Item,구매 물품
+period,구매 간격
+exchange,년간 평균 교환 회수
